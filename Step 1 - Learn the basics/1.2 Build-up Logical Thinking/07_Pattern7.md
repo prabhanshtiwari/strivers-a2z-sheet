@@ -5,10 +5,10 @@
 For `n = 5`:
 ```
     *
-   * * *
-  * * * * *
- * * * * * * *
-* * * * * * * * *
+   ***
+  *****
+ *******
+*********
 ```
 
 ---
@@ -92,7 +92,7 @@ void printPattern7(int n) {
         // Formula: (2 * i + 1) stars
         // Increases by 2 each row → creates odd-number sequence: 1, 3, 5, 7, 9...
         for (int j = 0; j < 2 * i + 1; j++) {
-            cout << "* "; // Print star with space
+            cout << "*"; 
         }
 
         // Move to next line after printing spaces and stars for this row
@@ -118,7 +118,7 @@ static void printPattern7(int n) {
 
         // Part 2: Stars (2*i + 1 stars)
         for (int j = 0; j < 2 * i + 1; j++) {
-            System.out.print("* ");
+            System.out.print("*");
         }
 
         System.out.println(); // New line after each row

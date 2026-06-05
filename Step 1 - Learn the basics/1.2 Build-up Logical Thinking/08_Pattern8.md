@@ -4,10 +4,10 @@
 
 For `n = 5`:
 ```
-* * * * * * * * *
- * * * * * * *
-  * * * * *
-   * * *
+*********
+ *******
+  *****
+   ***
     *
 ```
 
@@ -84,7 +84,7 @@ void printPattern8(int n) {
         // Equivalent to: 2*n - 2*i - 1
         // Row 0 → 2n-1 stars (most), Row n-1 → 1 star (fewest)
         for (int j = 0; j < 2 * (n - i) - 1; j++) {
-            cout << "* "; // Print star with space
+            cout << "*"; 
         }
 
         cout << endl; // Move to next line
@@ -109,7 +109,7 @@ static void printPattern8(int n) {
 
         // Part 2: Stars (decreases: 2n-1, 2n-3, ..., 3, 1)
         for (int j = 0; j < 2 * (n - i) - 1; j++) {
-            System.out.print("* ");
+            System.out.print("*");
         }
 
         System.out.println(); // New line

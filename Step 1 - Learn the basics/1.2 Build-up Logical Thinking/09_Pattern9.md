@@ -5,13 +5,14 @@
 For `n = 5`:
 ```
     *
-   * * *
-  * * * * *
- * * * * * * *
-* * * * * * * * *
- * * * * * * *
-  * * * * *
-   * * *
+   ***
+  *****
+ *******
+*********
+*********
+ *******
+  *****
+   ***
     *
 ```
 
@@ -53,7 +54,7 @@ void printPattern7(int n) {
         // Leading spaces: n - i - 1 times
         for (int j = 0; j < n - i - 1; j++) cout << " ";
         // Stars: 2*i + 1 times
-        for (int j = 0; j < 2 * i + 1; j++) cout << "* ";
+        for (int j = 0; j < 2 * i + 1; j++) cout << "*";
         cout << endl;
     }
 }
@@ -64,7 +65,7 @@ void printPattern8(int n) {
         // Leading spaces: i times
         for (int j = 0; j < i; j++) cout << " ";
         // Stars: 2*(n-i)-1 times
-        for (int j = 0; j < 2 * (n - i) - 1; j++) cout << "* ";
+        for (int j = 0; j < 2 * (n - i) - 1; j++) cout << "*";
         cout << endl;
     }
 }
@@ -90,7 +91,7 @@ void printPattern9(int n) {
         // Leading spaces decrease row by row
         for (int j = 0; j < n - i - 1; j++) cout << " ";
         // Stars increase (odd numbers: 1, 3, 5, ...)
-        for (int j = 0; j < 2 * i + 1; j++) cout << "* ";
+        for (int j = 0; j < 2 * i + 1; j++) cout << "*";
         cout << endl;
     }
 
@@ -99,7 +100,7 @@ void printPattern9(int n) {
         // Leading spaces increase row by row
         for (int j = 0; j < i; j++) cout << " ";
         // Stars decrease (odd numbers: 2n-1, 2n-3, ..., 1)
-        for (int j = 0; j < 2 * (n - i) - 1; j++) cout << "* ";
+        for (int j = 0; j < 2 * (n - i) - 1; j++) cout << "*";
         cout << endl;
     }
 }
@@ -115,14 +116,14 @@ static void printPattern9(int n) {
     // TOP HALF: Upward Pyramid
     for (int i = 0; i < n; i++) {
         for (int j = 0; j < n - i - 1; j++) System.out.print(" ");
-        for (int j = 0; j < 2 * i + 1; j++) System.out.print("* ");
+        for (int j = 0; j < 2 * i + 1; j++) System.out.print("*");
         System.out.println();
     }
 
     // BOTTOM HALF: Inverted Pyramid
     for (int i = 0; i < n; i++) {
         for (int j = 0; j < i; j++) System.out.print(" ");
-        for (int j = 0; j < 2 * (n - i) - 1; j++) System.out.print("* ");
+        for (int j = 0; j < 2 * (n - i) - 1; j++) System.out.print("*");
         System.out.println();
     }
 }
