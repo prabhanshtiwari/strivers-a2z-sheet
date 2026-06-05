@@ -189,17 +189,21 @@ void printPattern11(int n)
 
 void printPattern12(int n)
 {
-    for(int i = 1; i <= n; i++) {
+    for (int i = 1; i <= n; i++)
+    {
         // numbers
-        for(int j = 1; j <= i; j++){
+        for (int j = 1; j <= i; j++)
+        {
             cout << j;
         }
         // spaces
-        for(int j = 1; j <= 2*n - 2*i; j++){
+        for (int j = 1; j <= 2 * n - 2 * i; j++)
+        {
             cout << " ";
         }
         // numbers
-        for(int j = i; j >= 1; j--){
+        for (int j = i; j >= 1; j--)
+        {
             cout << j;
         }
 
@@ -207,20 +211,22 @@ void printPattern12(int n)
     }
 }
 
-void printPattern13(int n)  {
+void printPattern13(int n)
+{
     int num = 1;
     for (int i = 1; i <= n; i++)
     {
-        for(int j = 1; j <= i; j++){
+        for (int j = 1; j <= i; j++)
+        {
             cout << num++ << " ";
-            
         }
         cout << endl;
     }
 }
 
-void printPattern14(int n)  {
-    
+void printPattern14(int n)
+{
+
     for (int i = 1; i <= n; i++)
     {
         char ch = 'A';
@@ -248,8 +254,44 @@ void printPattern15(int n)
     }
 }
 
-void printPattern16(int n) {
-    
+void printPattern16(int n)
+{
+    char ch = 'A';
+    for (int i = 0; i < n; i++)
+    {
+
+        for (int j = 0; j <= i; j++)
+        {
+            cout << ch;
+        }
+        cout << endl;
+        ch = ch + 1;
+    }
+}
+
+void printPattern17(int n)
+{
+    for (int i = 0; i < n; i++)
+    {
+        // spaces
+        for (int j = 0; j < n - i - 1; j++)
+        {
+            cout << " ";
+        }
+        // characters
+        char ch = 'A';
+        // int breakpoint = (2 * i + 1) / 2;
+        for (int j = 0; j < 2 * i + 1; j++)
+        {
+            cout << ch;
+            
+            if (j < i)
+                ch++; // Left half including peak
+            else
+                ch--; // Right half
+        }
+        cout << endl;
+    }
 }
 
 int main()
@@ -273,7 +315,9 @@ int main()
     // printPattern12(n);
     // printPattern13(n);
     // printPattern14(n);
-    printPattern15(n);
+    // printPattern15(n);
+    // printPattern16(n);
+    printPattern17(n);
 
     return 0;
 }
