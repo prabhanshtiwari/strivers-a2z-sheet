@@ -1,20 +1,20 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include <queue>
 using namespace std;
 
 int main()
 {
-    vector <int> v = {1, 2, 3, 4, 5};
+    queue<int> q;
 
-    for (auto it : v)
+    q.push(10);
+    q.push(20);
+    q.push(30);
+
+    queue<int> temp = q;
+
+    while (!temp.empty())
     {
-        cout << it << " "; // 'it' takes each value directly (not an iterator/address)
+        cout << temp.front() << " ";
+        temp.pop();
     }
-
-    auto x = 10;
-    auto y = 3.14;
-
-    cout << typeid(x).name() << endl;
-    cout << typeid(y).name() << endl;
-
-    return 0;
 }
