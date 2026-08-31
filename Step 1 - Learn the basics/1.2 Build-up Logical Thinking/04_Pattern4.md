@@ -1,5 +1,7 @@
 # Pattern 4 — Right-Angled Triangle (Row Number Repeated)
 
+[Problem Link](https://www.naukri.com/code360/problems/triangle_6573690?leftPanelTabValue=PROBLEM)
+
 ## What It Looks Like
 
 For `n = 5`:

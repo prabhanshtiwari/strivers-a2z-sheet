@@ -1,5 +1,7 @@
 # Pattern 3 — Right-Angled Triangle (Numbers 1 to Row Number)
 
+[Problem Link](https://www.naukri.com/code360/problems/n-triangles_6573689?leftPanelTabValue=PROBLEM)
+
 ## What It Looks Like
 
 For `n = 5`:

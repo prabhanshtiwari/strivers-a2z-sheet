@@ -1,5 +1,7 @@
 # Pattern 1 — Solid Rectangle of Stars
 
+[Problem Link](https://www.naukri.com/code360/problems/n-forest_6570177)
+
 ## What It Looks Like
 
 For `n = 4`:

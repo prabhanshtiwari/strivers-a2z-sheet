@@ -1,5 +1,7 @@
 # Pattern 2 — Right-Angled Triangle (Stars, Increasing)
 
+[Problem Link](https://www.naukri.com/code360/problems/n-2-forest_6570178?leftPanelTabValue=PROBLEM)
+
 ## What It Looks Like
 
 For `n = 5`:
