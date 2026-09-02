@@ -37,7 +37,7 @@ Break down by row (0-indexed):
 - i=1: 1 space ✓
 - i=4: 4 spaces ✓
 
-**Formula for stars**: `2 * (n - i) - 1` = `2*n - 2*i - 1`
+**Formula for stars**: `2 * (n - i) - 1` = `2*n - 2*i - 1` or simply `2 * n - i - (i + 1)`
 - i=0: 2*5 - 0 - 1 = 9 ✓
 - i=1: 2*5 - 2 - 1 = 7 ✓
 - i=4: 2*5 - 8 - 1 = 1 ✓

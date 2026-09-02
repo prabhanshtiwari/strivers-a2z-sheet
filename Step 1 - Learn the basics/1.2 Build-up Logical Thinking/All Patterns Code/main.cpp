@@ -90,6 +90,129 @@ void pattern6(int n) {
     
 }
 
+void pattern7(int n) {
+
+    cout << "Pattern 7 - Star Pyramid (Equilateral Triangle)" << endl;
+
+    for (int i = 0; i < n; i++)
+    {
+        // spaces
+        for (int j = 0; j < n - i - 1; j++)
+        {
+            cout << " ";
+        }
+        
+
+        // stars
+        for (int j = 0; j < 2 * i + 1; j++)
+        {
+            cout << "*";
+        }
+
+        // spaces
+        for (int j = 0; j < n - i - 1; j++)
+        {
+            cout << " ";
+        }
+
+        cout << endl;
+        
+    }
+    
+
+}
+
+void pattern8(int n) {
+
+    for (int i = 0; i < n; i++)
+    {
+
+    
+       // spaces
+    for (int j = 0; j < i; j++)
+    {
+        cout << " ";
+    }
+    
+
+    // stars
+    for (int j = 0; j < 2 * n - i - (i + 1); j++)
+    {
+        cout << "*";
+    }
+    
+
+    // spaces
+    for (int j = 0; j < i; j++)
+    {
+        cout << " ";
+    }
+
+    cout << endl;
+    }
+
+}
+
+void pattern9(int n) {
+
+    cout << "Pattern 9 - Diamond (Pyramid + Inverted Pyramid)" << endl;
+
+    for (int i = 0; i < n; i++)
+    {
+        // spaces
+        for (int j = 0; j < n - i - 1; j++)
+        {
+            cout << " ";
+        }
+        
+
+        // stars
+        for (int j = 0; j < 2 * i + 1; j++)
+        {
+            cout << "*";
+        }
+
+        // spaces
+        for (int j = 0; j < n - i - 1; j++)
+        {
+            cout << " ";
+        }
+
+        cout << endl;
+        
+    }
+
+
+
+    for (int i = 0; i < n; i++)
+    {
+
+    
+       // spaces
+    for (int j = 0; j < i; j++)
+    {
+        cout << " ";
+    }
+    
+
+    // stars
+    for (int j = 0; j < 2 * n - i - (i + 1); j++)
+    {
+        cout << "*";
+    }
+    
+
+    // spaces
+    for (int j = 0; j < i; j++)
+    {
+        cout << " ";
+    }
+
+    cout << endl;
+    }
+
+}
+
 int main(){
 
     int N;
